@@ -1,9 +1,19 @@
-import { Container, Title } from './styles'
+import { Header } from '@components/Header';
+import { Highlight } from '@components/Highlight';
+import { GroupCard } from '@components/GroupCard';
+import { Container } from './styles'
 
 export function Groups() {
   return (
     <Container>
-      <Title>Wie hets eis dier?</Title>
+      <Header />
+      <Highlight 
+        title='Turmas'
+        subtitle='Jogue com a sua turma'
+      />
+      <GroupCard 
+        title='asdsa' 
+      />
     </Container>
   );
 }
